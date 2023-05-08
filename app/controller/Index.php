@@ -17,9 +17,13 @@ use app\model\Counters;
 use think\response\Html;
 use think\response\Json;
 use think\facade\Log;
+use think\facade\Config;
 
 class Index
 {
+    
+    $app = Config/::get('app');
+    print_r($app);
 
     /**
      * 主页静态页面
